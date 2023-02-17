@@ -1,15 +1,19 @@
 
-# Use Microsoft Purview for managing your data estate at large
+# Azure Cosmos DB
 
-Microsoft Purview is a unified data governance solution that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. It does data governance at scale, because it's a fully automated service that intelligently performs data discovery, data scanning and access management. It also provides a holistic map for providing many insights of your data mesh architecture.
+Azure Cosmos DB is a fully managed NoSQL and relational database for modern app development. Azure Cosmos DB offers single-digit millisecond response times, automatic and instant scalability, along with guarantee speed at any scale. Business continuity is assured with SLA-backed availability and enterprise-grade security.
 
 When implementing Microsoft Purview, it's recommend not introducing too much change and complexity quickly. The technical metadata is recommended to be the foundation. You'll need to gather and organize this before you can make sense of it. After this, start with the basics: business terms, lists of authoritative data sources and databases, schema information, data ownership and stewardship, and security. Slowly scale by involving more domain owners and data stewards. Also scale by adding more classifications and sensitivity labels. This improves the search experience and allows for better data access management. For your custom metadata attributes, such as list of domains and application metadata, you could consider creating extra type definitions in Microsoft Purview using Purview's REST APIs.
 
 When you envision a domain-oriented or more decentralized architecture, it's recommended to align your Microsoft Purview Collections and Glossaries with your data domains. Collections in Microsoft Purview are used to organize assets and sources. You can use a Collection as a boundary for your assets and sources and align this with a particular domain. You can do the same for your Glossary: create hierarchy structures within your glossary and align these with your domains. Ask your domains to take ownership for creating relationships between your glossary terms and collection attributes. This creates transparency over data ownership and improves your data semantics.
 
-## Relationship to Metadata Management
+## Key Benefits
 
-Data Governance has a strong relationship with Metadata Management. Metadata is data about data. It describes other data, providing a reference that helps you to find, secure and control data. Metadata also binds data together. It can be used for validating the integrity and quality of the data, routing or replicating it to the new location, transforming the data, and knowing its meaning are all performed through metadata. Metadata is also essential in democratizing data through self-service portals.
+* Guaranteed speed at any scale
+* Simplified application development
+* Mission-critical ready
+* Fully managed and cost-effective
+* Azure Synapse Link for Azure Cosmos DB
 
 A good metadata management strategy grows organically. It starts simple and small by first identifying the most important areas. A good metadata management strategy also is supported with services and clear processes. To get started, it's good to be aware of the different metadata categories:
 
