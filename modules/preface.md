@@ -7,7 +7,7 @@ When implementing Microsoft Purview, it's recommend not introducing too much cha
 
 When you envision a domain-oriented or more decentralized architecture, it's recommended to align your Microsoft Purview Collections and Glossaries with your data domains. Collections in Microsoft Purview are used to organize assets and sources. You can use a Collection as a boundary for your assets and sources and align this with a particular domain. You can do the same for your Glossary: create hierarchy structures within your glossary and align these with your domains. Ask your domains to take ownership for creating relationships between your glossary terms and collection attributes. This creates transparency over data ownership and improves your data semantics.
 
-## Key Benefits
+## [Key Benefits] (https://docs.microsoft.com/azure/architecture/example-scenario/data-warehouse/dataops-mdw)
 
 * Guaranteed speed at any scale
 * Simplified application development
