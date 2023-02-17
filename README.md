@@ -1,8 +1,10 @@
-# Microsoft Purview Workshop
+# Azure Cosmos DB Hands on Labs
 
-## What is Microsoft Purview?
+## What is Cosmos DB?
 
-Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud and software-as-a-service (SaaS) data. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification and end-to-end data lineage. Empower data consumers to find valuable, trustworthy data.
+Cosmos DB is a massively scalable NoSQL database that's available to your application as a fully managed Platform as a Service that runs on Azure. There are comprehensive service level agreements on throughput, latency, consistency, and availability. Cosmos DB also delivers blazing fast reads and writes, typically within 10 ms or less, whether you've got gigabytes, terabytes or petabytes of data. Cosmos DB automatically manages the growth of your data by horizontally partitioning the workload behind the scenes. The process is completely transparent and provides the elastic scale for virtually unlimited storage to handle volume, as well as throughput for velocity. Like all Azure services, Cosmos DB runs in many Microsoft data centers throughout the world. 
+
+And Cosmos DB has multiple APIs that support a variety of schema‑free data models. This includes not only JSON documents using either the SQL API or the MongoDB API, but table, graph, and columnar data models as well, which are exposed by the Table, Gremlin, and Cassandra APIs, respectively.
 
 ## :thinking: Prerequisites
 
