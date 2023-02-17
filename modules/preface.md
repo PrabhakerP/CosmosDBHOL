@@ -15,20 +15,7 @@ When you envision a domain-oriented or more decentralized architecture, it's rec
 * Fully managed and cost-effective
 * Azure Synapse Link for Azure Cosmos DB
 
-A good metadata management strategy grows organically. It starts simple and small by first identifying the most important areas. A good metadata management strategy also is supported with services and clear processes. To get started, it's good to be aware of the different metadata categories:
-
-- **Business metadata** is a category of metadata that describes all aspects used for governance, finding & understanding data. Some well-known examples are business terms, definitions, data ownership information, information about data usage and origination, and so on.
-- **Technical metadata** is a category of metadata that describes the structural aspects of data at design time. Some well-known examples are schema information, information about data formats and protocols, encryption and decryption keys, and so on.
-- **Operational metadata** is a category of metadata that describes processing aspects of data at run time. Some well-known examples are process information, execution time, information about whether a process failed, ID of the job, and so on.
-- **Social metadata** is a category of metadata that describes the user perspective of the data by its consumers. Some well-known examples are use and user tracking information, data on search results, filters and clicks, viewing time, profile hits, comments, and so on.
-
-When it comes to decentralized data architecture, metadata management is mostly an organizational challenge. It's about finding the right balance between centrally managed metadata and federated managed metadata. Metadata in this respect also has a strong relationship with [DataOps](https://docs.microsoft.com/azure/architecture/example-scenario/data-warehouse/dataops-mdw), which is an advanced and collaborative data management practice focused on improving the efficiency of communication, integration, and automation of data flows between teams across an organization. DataOps addresses some of the complexity associated with metadata management. It strikes a balance between central governance and domain ownership for metadata management.
-
-Before you start implementing and deciding what metadata to manage centrally or federate to your data domains, first ask yourself: What business metadata is critical? What technical metadata is required for interoperability? What processes and streams capture the data? Where are the models or schemas created and maintained? What information teams need to deliver centrally to allow the data governance department to do its work correctly? After you've analyzed your most important questions, you need to map out the content life cycle for each of the metadata streams and determine all dependencies. What you will end up with is a metadata model that can connect business domains, processes, technology, and data.
-
    ![](../images/preface/metadata.png)
-
-After you know what metadata you need, you need to find a place for storing and processing metadata. This brings you to Microsoft Purview.
 
 ## Collections for organizing technical metadata
 
