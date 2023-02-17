@@ -17,16 +17,11 @@ When you envision a domain-oriented or more decentralized architecture, it's rec
 
    ![](../images/preface/metadata.png)
 
-## Collections for organizing technical metadata
+## APIs in Azure Cosmos DB
 
-When planning your Microsoft Purview deployment and aligning your data governance activities, you need to define how technical metadata, such as data asset information, will be managed together. This grouping and the granularity of your technical metadata is what collections are for. A collection is a logical container or a boundary in which your metadata, such as data sources, will be managed. When creating collections and placing them in a hierarchy, you need to make different considerations, such as your security requirements, governance structure and democratization needs. For example, a more centralized-alined style of data management could lead to a different collection structure then a more domain-oriented style of data management. Microsoft has provided some best practices for organizing your collections, which can be found over here: [Microsoft Purview collections architectures and best practices](https://docs.microsoft.com/azure/purview/concept-best-practices-collections).
+Azure Cosmos DB offers multiple database APIs, which include NoSQL, MongoDB, PostgreSQL Cassandra, Gremlin, and Table. By using these APIs, you can model real world data using documents, key-value, graph, and column-family data models. These APIs allow your applications to treat Azure Cosmos DB as if it were various other databases technologies, without the overhead of management, and scaling approaches. Azure Cosmos DB helps you to use the ecosystems, tools, and skills you already have for data modeling and querying with its various APIs.
 
-The collection metadata, as you can see in the image from the previous section, mostly sits on a technical level. This also often implies a more technical-oriented data ownership. The contact persons assigned to your data assets are typically application- or database owners, knowing how these systems are designed. You can support these users also with additional roles in Purview:
-
-- **Collection Admins** can edit Microsoft Purview collections and their details and add sub-collections. They can also add users to other Microsoft Purview roles on collections where they're admins.
-- **Data Source Admins** can manage data sources and data scans.
-
-Assigning users to roles enables them to maintain technical metadata themselves without any help from a central departments. Enabling them with these roles makes your metadata activities more self-service.
+All the APIs offer automatic scaling of storage and throughput, flexibility, and performance guarantees. There's no one best API, and you may choose any one of the APIs to build your application.
 
 ## Glossary for capturing business knowledge
 
