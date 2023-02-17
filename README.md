@@ -17,7 +17,7 @@ And Cosmos DB has multiple APIs that support a variety of schema‑free data mod
 
 ## :books: Preface
 
-* [Preface: Introduction to Data Governance and Purview](./modules/preface.md)
+* [Preface: Welcome to Azure Cosmos DB](./modules/preface.md)
 
 ## :books: Learning Modules
 
