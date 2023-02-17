@@ -34,7 +34,3 @@ And Cosmos DB has multiple APIs that support a variety of schema‑free data mod
 8. [Using the Gremlin API for a Graph Data Model](./modules/module11.md)
 
 <div align="right"><a href="#microsoft-purview-workshop">↥ back to top</a></div>
-
-## :link: Workshop URL
-
-[https://aka.ms/purviewlab](https://aka.ms/purviewlab)
