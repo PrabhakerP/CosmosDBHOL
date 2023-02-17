@@ -21,7 +21,7 @@ And Cosmos DB has multiple APIs that support a variety of schema‑free data mod
 
 ## :books: Learning Modules
 
-1. [Create a Microsoft Purview Account](./modules/module01.md)
+1. [Create an Azure Cosmos DB account](./modules/module01.md)
 2. Register & Scan: [2A. Azure Data Lake Storage Gen2 (Managed Identity)](./modules/module02a.md) | [2B. Azure SQL Database (Azure Key Vault)](./modules/module02b.md)
 3. [Search & Browse](./modules/module03.md)
 4. [Glossary](./modules/module04.md)
