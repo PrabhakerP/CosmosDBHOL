@@ -23,33 +23,6 @@ Azure Cosmos DB offers multiple database APIs, which include NoSQL, MongoDB, Pos
 
 All the APIs offer automatic scaling of storage and throughput, flexibility, and performance guarantees. There's no one best API, and you may choose any one of the APIs to build your application.
 
-## Glossary for capturing business knowledge
+## Solutions that benefit from Azure Cosmos DB
 
-The glossary, contrasting to collections, sit on a business level. It is used to capture business knowledge that is commonly used, communicated, and shared in the organization. A glossary can help for improving an organizations overall business productivity and performance. It can also help to find data more easily.
-
-Within Microsoft Purview, the Glossary supports several features:
-
-- Supports adding business terms, including definitions, for capture relevant knowledge.
-- Supports relationship between terms, such as synonyms and related.
-- Supports hierarchies for better organizing your terms.
-- Supports term templates for capturing additional custom attributes.
-- Bulk import and exports of terms.
-- Allows terms to be mapped to assets like a database, tables, columns etc.
-
-Because business terms provide vocabulary for business users, it's also logical to assign business-oriented ownership. Purview uses data experts and data stewards. Data experts are typically the knowledge holder. They know a particular domain or business unit very well. Data stewards are often the people accountable. They oversee completeness and correctness. You can support these users also with additional roles in Purview:
-
-- **Data curators** - a role that provides access to the data catalog to manage assets, configure custom classifications, set up glossary terms, and view insights. Data curators can create, read, modify, move, and delete assets. They can also apply annotations to assets.
-
-Business terms and information from your collections can also be linked together. This method of bringing information from your source systems together by linking it to the same business terms, gives a richer experience to your organization. It helps you to understand how concepts and business terms have been translated to technical designs. It also enables you to correlate data across different systems and applications. Customer data, for example, often is stored across many different systems. By linking to business terms you can better oversee and more efficiently manage your data landscape.
-
-## Lineage
-
-Lineage is a vital aspect of data governance. It is the silver bullet that helps us track where our data originated, how it was gathered, how it has been modified, and how it is consumed downstream. It provides traceability as data flows through the enterprise. The need for such insight is driven by compliance, regulations, privacy, ethics, and reproducibility and transparency of advanced analytics models.
-
-To consistently capture lineage, you need to set standards like tools and methodologies to use. Users tend to follow the path of least resistance, so keep this in mind when offering services to your organization. Services like Azure Data Factory, AzureData Share, and Power BI automatically capture the lineage of data as it moves. Alternatively you create custom lineage, which is supported via Atlas hooks and REST API. Lineage in Microsoft Purview includes datasets and processes. Datasets are also referred to as nodes while processes can be also called edges:
-
-- **Dataset (Node)**: A dataset (structured or unstructured) provided as an input to a process. For example, a SQL Table, Azure blob, and files (such as .csv and .xml), are all considered datasets. In the lineage section of Microsoft Purview, datasets are represented by rectangular boxes.
-
-- **Process (Edge)**: An activity or transformation performed on a dataset is called a process. For example, ADF Copy activity, Data Share snapshot and so on. In the lineage section of Microsoft Purview, processes are represented by round-edged boxes.
-
-Lineage can also be used to provide insights in an end-to-end context. You could for example organize your metadata in Microsoft Purview as a graph by connecting it to other metadata subjects, such as domains, data quality, data usage, business capabilities, application functions, application life cycle management information, and so on. This approach of bringing metadata closer to data analysts and scientists is also known as "Data observability".
+Web, mobile, gaming, and IoT application that handle massive amounts of data, reads, and writes at a global scale with near-real response times for various data will benefit from Azure Cosmos DB. Azure Cosmos DB's guaranteed high availability, high throughput, low latency, and tunable consistency are huge advantages when building these types of applications. Learn about how Azure Cosmos DB can be used to build IoT and telematics, retail and marketing, gaming and web and mobile applications.
