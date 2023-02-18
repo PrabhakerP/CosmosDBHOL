@@ -15,17 +15,6 @@ When planning your Azure Cosmos DB you first need to create an account. Next, yo
 
 * Create an Azure Cosmos DB using the Azure portal.
 
-## :bookmark_tabs: Table of Contents
-
-| #  | Section | Role |
-| --- | --- | --- |
-| 1 | [Create a Microsoft Purview Account](#1-create-a-microsoft-purview-account) | Azure Administrator |
-| 2 | [Grant Access to Microsoft Purview's Data Plane](#2-grant-access-to-microsoft-purviews-data-plane) | Collection Administrator |
-
-<div align="right"><a href="#module-01---create-a-microsoft-purview-account">↥ back to top</a></div>
-
-## 1. Create a Microsoft Purview Account
-
 1. Sign in to the [Azure portal](https://portal.azure.com), navigate to the **Home** screen, click **Create a resource**.
 
     ![Create a Resource](../images/module01/01.01-create-resource.png)  
