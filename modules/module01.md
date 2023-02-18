@@ -32,7 +32,7 @@ Create an Azure Cosmos DB using the Azure portal.
 
     ![SelectAPI](../images/module01/choose-api.png)
 
-5. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and click **Create**.
+5. On the Create Azure Cosmos DB Account page, enter the following information:
 
     ![Create Purview Account](../images/module01/01.05-create-create.png)
 
