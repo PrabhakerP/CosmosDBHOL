@@ -23,8 +23,10 @@ Create an Azure Cosmos DB using the Azure portal.
 
     ![Create Cosmos DB Resource](../images/module01/CreateCosmosAcct.png)
 
-3. Provide the necessary inputs on the **Basics** tab and click **Next: Networking >**.  
-
+3. Select Azure Cosmos DB under Plan and click ##Create.  
+    
+    ![Create Cosmos DB Resource](../images/module01/CreateCosmosAcct.png)
+    
     > Note: The table below provides example values for illustrative purposes only, ensure to specify values that make sense for your deployment. If you have pre-deployed other Azure resources using the lab template, they would have been created with a `randomId`, it is recommended to use the same `randomId` for the Microsoft Purview account name as per the example below.
 
     | Parameter  | Example Value |
