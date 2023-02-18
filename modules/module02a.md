@@ -66,65 +66,6 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 4. Select **Save** you'll see the id property with a GUID value is created.
 
 
-5. With the container name selected, click on the **Upload** button and select **Upload Folder...**.
-
-    ![Upload Folder](../images/module02/02.13-explorer-upload.png)
-
-6. Click on the **ellipsis** to select a folder.
-
-    ![Browse](../images/module02/02.14-explorer-browse.png)
-
-7. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and click **Select Folder**.
-
-    ![Folder](../images/module02/02.15-explorer-folder.png)
-
-8. Click **Upload**.
-
-    ![Upload](../images/module02/02.16-explorer-data.png)
-
-9. Monitor the **Activities** until the transfer is complete.
-
-    ![Transfer Complete](../images/module02/02.17-explorer-transfer.png)
-
-<div align="right"><a href="#module-02a---register--scan-adls-gen2">↥ back to top</a></div>
-
-## 3. Create a Collection
-
-> :bulb: **Did you know?**
->
-> [Collections](https://docs.microsoft.com/azure/purview/how-to-create-and-manage-collections) in Microsoft Purview can be used to organize data sources, scans, and assets in a hierarchical model based on how your organization plans to use Microsoft Purview. The collection hierarchy also forms the security boundary for your metadata to ensure users don't have access to data they don't need (e.g. sensitive metadata). 
->
-> For more information, check out [Collection Architectures and Best Practices](https://docs.microsoft.com/azure/purview/concept-best-practices-collections).
-
-1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Map** > **Collections**, and click  **Add a collection**.
-
-    ![New Collection](../images/module02/02.18-sources-collection.png)
-
-2. Provide the collection a **Name** (e.g. `Contoso`) and click **Create**.
-
-    ![New Collection](../images/module02/02.76-collection-create.png)
-
-<div align="right"><a href="#module-02a---register--scan-adls-gen2">↥ back to top</a></div>
-
-## 4. Register a Source (ADLS Gen2)
-
-1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Map** > **Sources**, and click on **Register**.
-
-    ![Register](../images/module02/02.20-sources-register.png)
-
-2. Search for `Data Lake`, select **Azure Data Lake Storage Gen2**, and click **Continue**.
-
-    ![Sources](../images/module02/02.21-sources-adls.png)
-
-3. Select the **Azure subscription**, **Storage account name**, **Collection**, and click **Register**.
-
-    > :bulb: **Did you know?**
-    >
-    > At this point, we have simply registered a data source. Assets are not written to the catalog until after a scan has finished running.
-
-    ![Source Properties](../images/module02/02.22-sources-properties.png)
-
-<div align="right"><a href="#module-02a---register--scan-adls-gen2">↥ back to top</a></div>
 
 ## 5. Scan a Source with the Microsoft Purview Managed Identity
 
