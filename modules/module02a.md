@@ -28,7 +28,7 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
     ![Data Explorer-Subcription-Account](../images/module02/Fullscreen-sub-acct-settings.png)
 
-3. click t**New Container** from the top left corner, provide the following details. Select **OK**.
+3. click **New Container** from the top left corner, provide the following details. Select **OK**.
 
     ![New Container](../images/module02/ContainerSettings.png)
 
