@@ -13,7 +13,7 @@ When planning your Azure Cosmos DB you first need to create an account. Next, yo
 
 ## :dart: Objectives
 
-* Create an Azure Cosmos DB using the Azure portal.
+Create an Azure Cosmos DB using the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com), navigate to the **Home** screen, click **Create a resource**.
 
