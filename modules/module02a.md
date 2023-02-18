@@ -20,6 +20,8 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 >
 > In this module we will walk through how to create a container and documents using data explorer.
 
+## 1. Create a container using Azure portal
+
 1. Navigate to Open the Data Explorer pane, and select **Open Full Screen**.
 
     ![OpenFullScreen](../images/module02/DataExp.png)
