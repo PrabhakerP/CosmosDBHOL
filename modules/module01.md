@@ -1,6 +1,6 @@
 # Module 01 - Create an Azure Cosmos DB account
 
-[< Previous Module](../modules/Readme.md) - **[Home](../README.md)** - [Next Module >](../modules/module02a.md)
+[< Previous Module](../modules/README.md) - **[Home](../README.md)** - [Next Module >](../modules/module02a.md)
 
 ## :loudspeaker: Introduction
 
