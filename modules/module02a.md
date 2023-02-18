@@ -37,25 +37,34 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 ## 2. Creating Documents from Data Explorer
 
-Before proceeding with the following steps, you will need to:
+1. Expand the **Families** and select Items(another name for documents).
 
-* Download and install [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
-* Open Azure Storage Explorer.
-* Sign in to Azure via **View > Account Management > Add an account...**.
+2. Select **New Item** from the menu.
+    ![New Item](../images/module02/NewItem.png)
 
-1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine. Note: This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
+3. Type in the JSON for my first family. Omit the id when you create a new document. The id property GUID gets generated automatically.
 
-2. Locate the downloaded zip file via File Explorer and unzip the contents by right-clicking the file and selecting **Extract All...**.
+    {
+    "familyName": "Smith",
+    "address": {
+        "addressLine": "123 Main Street",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60601"
+    },
+    "parents": [
+        "Peter",
+        "Alice"
+    ],
+    "kids": [
+        "Adam",
+        "Jacqueline",
+        "Joshua"
+    ]
+    }
 
-    ![Extract zip file](../images/module02/02.07-explorer-unzip.png)
+4. Select **Save** you'll see the id property with a GUID value is created.
 
-3. Click **Extract**.
-
-    ![Extract](../images/module02/02.08-explorer-extract.png)
-
-4. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container `raw`.
-
-    ![Create Blob Container](../images/module02/02.12-explorer-container.png)
 
 5. With the container name selected, click on the **Upload** button and select **Upload Folder...**.
 
