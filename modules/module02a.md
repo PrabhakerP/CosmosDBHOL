@@ -20,17 +20,17 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 >
 > In this module we will walk through how to create a container and documents using data explorer.
 
-1. Navigate to your Azure Data Lake Storage Gen2 account (e.g. `pvlab{randomId}adls`) and select **Access Control (IAM)** from the left navigation menu.
+1. Navigate to Open the Data Explorer pane, and select **Open Full Screen**.
 
-    ![Microsoft Purview](../images/module02/02.01-storage-access.png)
+    ![OpenFullScreen](../images/module02/DataExp.png)
 
-2. Click **Add role assignment**.
+2. Select the Subscription and Cosmos DB account that we created earlier.
 
-    ![Microsoft Purview](../images/module02/02.02-storage-addrole.png)
+    ![Data Explorer-Subcription-Account](../images/module02/Fullscreen-sub-acct-settings.png)
 
-3. Filter the list of roles by searching for `Storage Blob Data Reader`, click the row to select the role, and then click **Next**.
+3. click t**New Container** from the top left corner, provide the following details. Select **OK**.
 
-    ![Access Control Role](../images/module02/02.03-access-role.png)
+    ![New Container](../images/module02/ContainerSettings.png)
 
 4. Under **Assign access to**, select **Managed identity**, click **+ Select members**, select **Microsoft Purview account** from the **Managed Identity** drop-down menu, select the managed identity for your Microsoft Purview account (e.g. `pvlab-{randomId}-pv`), click **Select**. Finally, click **Review + assign**.
 
