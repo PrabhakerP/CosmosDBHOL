@@ -21,7 +21,7 @@ Create an Azure Cosmos DB using the Azure portal.
 
 2. On the New page, search for and select Azure Cosmos DB.
 
-    ![Create Purview Resource](../images/module01/01.02-create-purview.png)
+    ![Create Cosmos DB Resource](../images/module01/CreateCosmosAcct.png)
 
 3. Provide the necessary inputs on the **Basics** tab and click **Next: Networking >**.  
 
