@@ -11,10 +11,6 @@ And Cosmos DB has multiple APIs that support a variety of schema‑free data mod
 * An [Azure account](https://azure.microsoft.com/free/) with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a [free account](https://www.azure.com/free).
 * You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
 
-## :test_tube: Lab Environment Setup
-
-* [Lab Environment](./modules/module00.md)
-
 ## :books: Preface
 
 * [Preface: Welcome to Azure Cosmos DB](./modules/preface.md)
