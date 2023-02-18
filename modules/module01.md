@@ -23,37 +23,14 @@ Create an Azure Cosmos DB using the Azure portal.
 
     ![Create Cosmos DB Resource](../images/module01/CreateCosmosAcct.png)
 
-3. Select Azure Cosmos DB under Plan and click ##Create.  
+3. Select Azure Cosmos DB under Plan and click ## Create.  
     
     ![Create Cosmos DB Resource](../images/module01/CreateCosmosAcctPlan.png)
     
-    > Note: The table below provides example values for illustrative purposes only, ensure to specify values that make sense for your deployment. If you have pre-deployed other Azure resources using the lab template, they would have been created with a `randomId`, it is recommended to use the same `randomId` for the Microsoft Purview account name as per the example below.
 
-    | Parameter  | Example Value |
-    | --- | --- |
-    | Subscription | `YOUR_AZURE_SUBSCRIPTION` |
-    | Resource group | `pvlab-rg` |
-    | Microsoft Purview account name | `pvlab-{randomId}-pv` |
-    | Location | `YOUR_LOCATION` |
-    | Event Hubs namespace name | `Enable` |
+4. On the Select API option page, select the Create option within the NoSQL section.
 
-    ![Purview Account Basics](../images/module01/01.03-create-basic.png)
-
-    > :bulb: **Did you know?**
-    >
-    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 10GB of metadata storage about data assets.
-    >
-    > Capacity Units are required regardless of whether you plan to invoke the Microsoft Purview API endpoints directly (i.e. ISV scenario) or indirectly via the Microsoft Purview Governance Portal (GUI).
-    >
-    > Note: With the introduction of the [Elastic Data Map](https://docs.microsoft.com/azure/purview/concept-elastic-data-map), you no longer need to specify how many Capacity Units that you need. Microsoft Purview will scale capacity elastically based on the request load.
-    >
-    > **vCore Hours** on the other hand, is the unit of measure for **serverless** compute that is needed to run a scan. You only pay per vCore Hour of scanning that you consume (rounded up to the nearest minute).
-    >
-    > For more information, check out the [Microsoft Purview Pricing](https://azure.microsoft.com/pricing/details/purview/) page.
-
-4. On the **Networking** tab, select **All networks**, and click **Review + Create**.
-
-    ![Networking](../images/module01/01.04-create-networking.png)
+    ![SelectAPI](../images/module01/choose-api.png)
 
 5. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and click **Create**.
 
