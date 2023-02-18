@@ -34,21 +34,8 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
     ![New Container](../images/module02/ContainerSettings.png)
 
-4. Under **Assign access to**, select **Managed identity**, click **+ Select members**, select **Microsoft Purview account** from the **Managed Identity** drop-down menu, select the managed identity for your Microsoft Purview account (e.g. `pvlab-{randomId}-pv`), click **Select**. Finally, click **Review + assign**.
 
-    ![Access Control Members](../images/module02/02.05-access-members.png)
-
-5. Click **Review + assign** once more to perform the role assignment.
-
-    ![Access Control Assign](../images/module02/02.06-access-assign.png)
-
-6. To confirm the role has been assigned, navigate to the **Role assignments** tab and filter the **Scope** to `This resource`. You should be able to see that the Microsoft Purview managed identity has been granted the **Storage Blob Data Reader** role.
-
-    ![Role Assignment](../images/module02/02.11-role-assignment.png)
-
-<div align="right"><a href="#module-02a---register--scan-adls-gen2">↥ back to top</a></div>
-
-## 2. Upload Data to Azure Data Lake Storage Gen2 Account
+## 2. Creating Documents from Data Explorer
 
 Before proceeding with the following steps, you will need to:
 
