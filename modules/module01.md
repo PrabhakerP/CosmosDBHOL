@@ -34,7 +34,7 @@ Create an Azure Cosmos DB using the Azure portal.
 
 5. On the Create Azure Cosmos DB Account page, enter the following information:
 
-    ![Create Purview Account](../images/module01/01.05-create-create.png)
+    ![Create Purview Account](../images/module01/CosmosAcctDetails.png)
 
 6. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
 
