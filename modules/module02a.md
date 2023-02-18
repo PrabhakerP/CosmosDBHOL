@@ -13,7 +13,9 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 > :bulb: **Did you know?**
 >
-> To scan a source, Microsoft Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Microsoft Purview supports the following [authentication methods](https://docs.microsoft.com/azure/purview/register-scan-adls-gen2?tabs=MI#prerequisites-for-scan).
+> There are 2 types of partitions Logical and Physical. 
+> A logical partition consists of a set of items that have the same partition key. For example, in a container that contains data about food nutrition, all items contain a foodGroup property. The underlying storage mechanism for data in Azure Cosmos DB is called a physical partition.
+>   [Partitioning Overview](https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview).
 >
 > * System-assigned Managed Identity (recommended)
 > * User-assigned Managed Identity
