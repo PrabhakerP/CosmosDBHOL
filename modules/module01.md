@@ -34,7 +34,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 
     ![Create a Resource](../images/module01/01.01-create-resource.png)  
 
-2. Search the Marketplace for "Microsoft Purview" and click **Create**.
+2. On the New page, search for and select Azure Cosmos DB.
 
     ![Create Purview Resource](../images/module01/01.02-create-purview.png)
 
