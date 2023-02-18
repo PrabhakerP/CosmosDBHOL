@@ -17,12 +17,8 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 > A logical partition consists of a set of items that have the same partition key. For example, in a container that contains data about food nutrition, all items contain a foodGroup property. The underlying storage mechanism for data in Azure Cosmos DB is called a physical partition.
 >   [Partitioning Overview](https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview).
 >
-> * System-assigned Managed Identity (recommended)
-> * User-assigned Managed Identity
-> * Service Principal
-> * Account Key
 >
-> In this module we will walk through how to grant the Microsoft Purview system-assigned managed identity the necessary access to successfully configure and run a scan.
+> In this module we will walk through how to create a container and documents using data explorer.
 
 1. Navigate to your Azure Data Lake Storage Gen2 account (e.g. `pvlab{randomId}adls`) and select **Access Control (IAM)** from the left navigation menu.
 
