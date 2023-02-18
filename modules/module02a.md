@@ -4,39 +4,12 @@
 
 ## :loudspeaker: Introduction
 
-To populate Microsoft Purview with assets for data discovery and understanding, you must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data.
-
-In this module, you'll walk through how to register and scan data sources. You'll create a new collection for your first data source, upload data and configure scanning. By the end of this module you'll have technical metadata, such as schema information, stored in Purview. You can use this to start linking to business terms, allowing your team members to easier find data.
-
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
-* An Azure Data Lake Storage Gen2 account (see [module 00](../modules/module00.md)).
-* A Microsoft Purview account (see [module 01](../modules/module01.md)).
-
-## :hammer: Tools
-
-* [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) (Download and Install)
+An Azure Cosmos DB container is where data is stored. Unlike most relational databases which scale up with larger VM sizes, Azure Cosmos DB scales out. Data is stored on one or more servers, called partitions. To increase throughput or storage, more partitions are added. This provides a virtually an unlimited amount of throughput and storage for a container. When a container is created, you need to supply a partition key. This is a property you select from your documents to store. The value of that property is then used to route data to the partition to be written, updated, or deleted. It can also be used in the WHERE clause in queries for efficient data retrieval.
 
 ## :dart: Objectives
 
-* Create a collection.
-* Register and scan an Azure Data Lake Storage Gen2 account using the Microsoft Purview managed identity.
+* Create a Container and add documents
 
-## :bookmark_tabs: Table of Contents
-
-| #  | Section | Role |
-| --- | --- | --- |
-| 1 | [Grant the Microsoft Purview Managed Identity Access](#1-grant-the-microsoft-purview-managed-identity-access) | Azure Administrator |
-| 2 | [Upload Data to Azure Data Lake Storage Gen2 Account](#2-upload-data-to-azure-data-lake-storage-gen2-account) | Azure Administrator |
-| 3 | [Create a Collection](#3-create-a-collection) | Collection Administrator |
-| 4 | [Register a Source (ADLS Gen2)](#4-register-a-source-adls-gen2) | Data Source Administrator |
-| 5 | [Scan a Source with the Microsoft Purview Managed Identity](#5-scan-a-source-with-the-microsoft-purview-managed-identity) | Data Source Administrator |
-| 6 | [View Assets](#6-view-assets) | Data Reader |
-
-<div align="right"><a href="#module-02a---register--scan-adls-gen2">↥ back to top</a></div>
-
-## 1. Grant the Microsoft Purview Managed Identity Access
 
 > :bulb: **Did you know?**
 >
