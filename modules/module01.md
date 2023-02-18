@@ -10,12 +10,10 @@ When planning your Azure Cosmos DB you first need to create an account. Next, yo
 
 * An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
 * Your must have permissions to create resources in your Azure subscription.
-* Your subscription must have the following resource providers registered: **Microsoft.Purview**, **Microsoft.Storage**, and **Microsoft.EventHub**. Instructions on how to register a resource provider via the Azure Portal can be found [here](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-providers-and-types#azure-portal).
 
 ## :dart: Objectives
 
-* Create a Microsoft Purview account using the Azure portal.
-* Provide additional users access to Microsoft Purview's data plane.
+* Create an Azure Cosmos DB using the Azure portal.
 
 ## :bookmark_tabs: Table of Contents
 
