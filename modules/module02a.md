@@ -1,4 +1,4 @@
-# Module 02A - Register & Scan (ADLS Gen2)
+# Module 02 - Create a Container
 
 [< Previous Module](../modules/module01.md) - **[Home](../README.md)** - [Next Module >](../modules/module02b.md)
 
