@@ -94,8 +94,11 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
     "133 Wheat Ridge Ln."
     
 7. Select **Update** 
+
 8. Click on the **...** in Items to bring up a query editor.
-![Query](../images/module02/NewQuery.png)
+
+   ![New Query](../images/module02/NewQuery.png)
+
 9. Write and Execute these queries:
 
     SELECT * FROM c
