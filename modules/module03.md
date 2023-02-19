@@ -7,6 +7,7 @@
 Jupyter Notebooks is an open-source interactive developer environment (IDE) that's designed to create, execute, and share documents that contain live code, equations, visualizations, and narrative text.
 
 Azure Cosmos DB built-in Jupyter Notebooks are directly integrated into the Azure portal and your Azure Cosmos DB accounts, making them convenient and easy to use. Developers, data scientists, engineers, and analysts can use the familiar Jupyter Notebooks experience to perform common tasks. These common tasks include:
+
     data exploration
     data cleaning
     data transformations
