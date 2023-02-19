@@ -40,7 +40,8 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 1. Expand the **Families** and select Items(another name for documents).
 
 2. Select **New Item** from the menu.
-    ![New Item](../images/module02/NewItem.png)
+
+   ![New Item](../images/module02/NewItem.png)
 
 3. Type in the JSON for my first family. Omit the id when you create a new document. The id property GUID gets generated automatically.
 
