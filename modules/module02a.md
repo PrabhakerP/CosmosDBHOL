@@ -63,8 +63,39 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
     ]
     }
 
+
 4. Select **Save** you'll see the id property with a GUID value is created.
 
+5. Let's add anther item with these values:
+
+{
+    "familyName": "James",
+    "address": {
+        "addressLine": "6890 Choachman Dr.",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60603"
+    },
+    "parents": [
+        "David",
+        "Diana"
+    ],
+    "kids": [
+        "Ava",
+        "Brad"
+    ],
+    "pets": [
+        "Tiger"
+    ]
+}
+
+6. Let's update the addressline to 
+    "133 Wheat Ridge Ln."
+    
+7. Select **Update** 
+
+8. Click on the "..." in Items to bring up a query editor
+9. 
 
 
 ## 5. Scan a Source with the Microsoft Purview Managed Identity
