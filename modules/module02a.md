@@ -95,64 +95,30 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 7. Select **Update** 
 
 8. Click on the "..." in Items to bring up a query editor
-9. 
+    ![New Query](../images/module02/NewQuery.png)
+
+9. Write and Execute these queries:
+
+    SELECT * FROM c
+    WHERE c.address.city = 'Chicago'
+
+    SELECT * FROM c
+    WHERE c.address.zipCode = '60601'
+
+    SELECT * FROM c
+    WHERE IS_DEFINED(c.pets)
+
+    SELECT * FROM c
+    WHERE ARRAY_LENGTH(c.kids) > 2
 
 
-## 5. Scan a Source with the Microsoft Purview Managed Identity
+## 5. Uploading a JSON file with multiple items
 
-1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
 
-    ![New Scan](../images/module02/02.23-scan-new.png)
+## 6. Using NoteBook
 
-2. Click **Test connection** to ensure the Microsoft Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
-
-    ![Test Connection](../images/module02/02.24-scan-test.png)
-
-3. Expand the hierarchy to see which assets will be within the scans scope, and click **Continue**.
-
-    ![Scan Scope](../images/module02/02.25-scan-scope.png)
-
-4. Select the system default scan rule set and click **Continue**.
-
-    > :bulb: **Did you know?**
-    >
-    > [Scan Rule Sets](https://docs.microsoft.com/azure/purview/create-a-scan-rule-set) determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
-
-    ![Scan rule set](../images/module02/02.26-scan-ruleset.png)
-
-5. Select **Once** and click **Continue**.
-
-    ![Scan Trigger](../images/module02/02.27-scan-trigger.png)
-
-6. Click **Save and Run**.
-
-    ![Run Scan](../images/module02/02.28-scan-run.png)
-
-7. To monitor the progress of the scan run, click **View Details**.
-
-    ![View Details](../images/module02/02.29-sources-details.png)
-
-8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
-
-    ![Monitor Scan](../images/module02/02.30-sources-refresh.png)
-
-<div align="right"><a href="#module-02a---register--scan-adls-gen2">↥ back to top</a></div>
-
-## 6. View Assets
-
-1. Navigate to the **Microsoft Purview Governance Portal** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
-
-    ![ALT](../images/module02/02.80-wildcard-search.png)
-
-2. You should be able to see a list of assets within the search results, which is a result of the scan.
-
-    ![ALT](../images/module02/02.72-search-wildcard.png)
-
-<div align="right"><a href="#module-02a---register--scan-adls-gen2">↥ back to top</a></div>
 
 ## :mortar_board: Knowledge Check
-
-[https://aka.ms/purviewlab/q02](https://aka.ms/purviewlab/q02)
 
 1. What type of object can help organize data sources into logical groups?
 
