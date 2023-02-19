@@ -96,7 +96,7 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 8.   Click on the **...** in Items to bring up a query editor.
 
-    ![Query](../images/module02/NewQuery.png)
+    ![Query](../images/module02/NewItem.png)
     
 9. Write and Execute these queries:
 
