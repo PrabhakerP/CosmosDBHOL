@@ -44,50 +44,50 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 3. Type in the JSON for my first family. Omit the id when you create a new document. The id property GUID gets generated automatically.
 
-    {
-    "familyName": "Smith",
-    "address": {
-        "addressLine": "123 Main Street",
-        "city": "Chicago",
-        "state": "IL",
-        "zipCode": "60601"
-    },
-    "parents": [
-        "Peter",
-        "Alice"
-    ],
-    "kids": [
-        "Adam",
-        "Jacqueline",
-        "Joshua"
-    ]
-    }
+        {
+        "familyName": "Smith",
+        "address": {
+            "addressLine": "123 Main Street",
+            "city": "Chicago",
+            "state": "IL",
+            "zipCode": "60601"
+        },
+        "parents": [
+            "Peter",
+            "Alice"
+        ],
+        "kids": [
+            "Adam",
+            "Jacqueline",
+            "Joshua"
+        ]
+        }
 
 
 4. Select **Save** you'll see the id property with a GUID value is created.
 
 5. Let's add anther item with these values:
 
-{
-    "familyName": "James",
-    "address": {
-        "addressLine": "6890 Choachman Dr.",
-        "city": "Chicago",
-        "state": "IL",
-        "zipCode": "60603"
-    },
-    "parents": [
-        "David",
-        "Diana"
-    ],
-    "kids": [
-        "Ava",
-        "Brad"
-    ],
-    "pets": [
-        "Tiger"
-    ]
-}
+        {
+            "familyName": "James",
+            "address": {
+                "addressLine": "6890 Choachman Dr.",
+                "city": "Chicago",
+                "state": "IL",
+                "zipCode": "60603"
+            },
+            "parents": [
+                "David",
+                "Diana"
+            ],
+            "kids": [
+                "Ava",
+                "Brad"
+            ],
+            "pets": [
+                "Tiger"
+            ]
+        }
 
 6. Let's update the addressline to 
     "133 Wheat Ridge Ln."
