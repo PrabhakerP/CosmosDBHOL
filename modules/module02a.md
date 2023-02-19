@@ -44,7 +44,7 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 3. Type in the JSON for my first family. Omit the id when you create a new document. The id property GUID gets generated automatically.
 
-        {
+    {
         "familyName": "Smith",
         "address": {
             "addressLine": "123 Main Street",
@@ -61,7 +61,8 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
             "Jacqueline",
             "Joshua"
         ]
-        }
+    }
+
 
 
 4. Select **Save** you'll see the id property with a GUID value is created.
