@@ -120,6 +120,11 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
     ![New Container](../images/module02/Cities.png)
 
+2. Expand **Cities** and Click on **CityPopulation**
+
+3. Select **Upload Item** from the menu and browse to the extrated file and select citie.json.
+
+4. Click **Upload**
 
 ## 6. Using NoteBook
 
