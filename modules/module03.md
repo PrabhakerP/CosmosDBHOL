@@ -24,15 +24,18 @@ Azure Cosmos DB built-in Jupyter Notebooks are directly integrated into the Azur
 * Update an existing asset.
 * Perform a bulk edit operation.
 
-## 1. Search Catalog
+## 1. Create a new notebook
 
-1. Open the **Microsoft Purview Governance Portal**, navigate to **Data Catalog** > **Home**, type the asterisk character (**\***) into the search bar, and hit **Enter**.
+1. Navigate to your Azure Cosmos DB account and open the Data Explorer.
+2. Select **New Notebook**.
 
-    ![Search Wildcard](../images/module03/03.01-search-wildcard.png)
+    ![Search Wildcard](../images/module03/new-notebook-option.png)
 
-2. Filter the search results by **Classification** (e.g. **Country/Region**) and click the hyperlinked asset name to view the details (e.g. `QueriesByState`).
+3. select **Create**.
 
-    ![Filter by Classification](../images/module03/03.02-search-filter.png)
+4. Select the **Python** kernel to use for the notebook.
+
+    ![Filter by Classification](../images/module03/python-kernel.png)
 
 > :bulb: **Did you know?**
 >
