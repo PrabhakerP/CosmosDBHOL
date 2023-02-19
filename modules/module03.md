@@ -29,13 +29,13 @@ Azure Cosmos DB built-in Jupyter Notebooks are directly integrated into the Azur
 1. Navigate to your Azure Cosmos DB account and open the Data Explorer.
 2. Select **New Notebook**.
 
-    ![New Notebook](../images/module03/new-notebook-option.png)
+    ![New Notebook](../images/Module03/new-notebook-option.png)
 
 3. select **Create**.
 
 4. Select the **Python** kernel to use for the notebook.
 
-    ![Python Kernel](../images/module03/python-kernel.png)
+    ![Python Kernel](../images/Module03/python-kernel.png)
 
 > :bulb: **Did you know?**
 >
