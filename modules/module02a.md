@@ -116,6 +116,10 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 ## 5. Uploading a JSON file with multiple items
 
+1. click New Container from the top left corner, provide the following details. Select OK.
+
+    ![New Container](../images/module02/ContainerSettings.png)
+
 
 ## 6. Using NoteBook
 
