@@ -1,6 +1,6 @@
-# Module 07 - Insights
+# Module 07 - Using the Gremlin API for a Graph Data Model
 
-[< Previous Module](../modules/module06.md) - **[Home](../README.md)** - [Next Module >](../modules/module08.md)
+[< Previous Module](../modules/module06.md) - **[Home](../README.md)**
 
 ```diff
 !                               << PLEASE READ BEFORE PROCEEDING >>                                
