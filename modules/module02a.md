@@ -1,4 +1,4 @@
-# Module 02 - Create a Container
+# Module 02 - Creating Containers & Documents
 
 [< Previous Module](../modules/module01.md) - **[Home](../README.md)** - [Next Module >](../modules/module02b.md)
 
