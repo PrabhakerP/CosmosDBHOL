@@ -73,7 +73,40 @@ Azure Cosmos DB built-in Jupyter Notebooks are directly integrated into the Azur
 
 4. Observe the output from the run command. Ensure that 2,654 documents were imported.
 
+## 4. Create a database and container
 
+1. Create another new code cell.
+
+2. In the code cell, use a SQL query
+
+        %%sql --database RetailIngest --container WebsiteMetrics --output df_cosmos
+        SELECT c.Action, c.Price as ItemRevenue, c.Country, c.Item FROM c
+
+3. Select **Run Active Cell** to only run the command in this specific cell.
+
+4. Create another new code cell.
+
+5. In the code cell, output the top 10 items from the dataframe.
+
+        df_cosmos.head(10)
+
+6. Select **Run Active Cell** to only run the command in this specific cell.
+
+7. Create another new code cell.
+
+8. In the code cell, import the **pandas** package to customize the output of the dataframe.
+
+        import pandas as pd
+        pd.options.display.html.table_schema = True
+        pd.options.display.max_rows = None
+
+        df_cosmos.groupby("Item").size()
+        
+ 9. Select **Run Active Cell** to only run the command in this specific cell.       
+ 
+ 10. In the output, select the Line Chart option to view a different visualization of the data.
+ 
+ 
 > :bulb: **Did you know?**
 >
 > To save your work permanently, save your notebooks to a GitHub repository or download the notebooks to your local machine before the session ends.
