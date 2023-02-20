@@ -1,6 +1,6 @@
 # Module 02 - Creating Containers & Documents
 
-[< Previous Module](../modules/module01.md) - **[Home](../README.md)** - [Next Module >](../modules/module02b.md)
+[< Previous Module](../modules/module01.md) - **[Home](../README.md)** - [Next Module >](../modules/module02a.md)
 
 ## :loudspeaker: Introduction
 
