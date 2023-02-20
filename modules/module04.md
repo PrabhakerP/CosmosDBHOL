@@ -1,4 +1,4 @@
-# Module 04 - Glossary
+# Module 04 - Programming with .NET SDK
 
 [< Previous Module](../modules/module03.md) - **[Home](../README.md)** - [Next Module >](../modules/module05.md)
 
