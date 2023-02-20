@@ -1,4 +1,4 @@
-# Module 06 - Lineage
+# Module 06 - Advanced Programming Features
 
 [< Previous Module](../modules/module05.md) - **[Home](../README.md)** - [Next Module >](../modules/module07.md)
 
