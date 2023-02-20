@@ -20,8 +20,8 @@ And Cosmos DB has multiple APIs that support a variety of schema‑free data mod
 1. [Create an Azure Cosmos DB account](./modules/module01.md)
 2. [Create a Containers, Documents and Cosmos DB queries](./modules/module02a.md)
 3. [Using Notebook](./modules/module03.md)
-4. [Management Options](./modules/module04.md)
-5. [Programming with .NET](./modules/module05.md)
+4. [Programming with .NET](./modules/module04.md)
+5. [Querying](./modules/module05.md)
 
 ## :books: Optional Learning Modules
 
