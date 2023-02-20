@@ -37,48 +37,100 @@ Azure Cosmos DB built-in Jupyter Notebooks are directly integrated into the Azur
 
     ![Python Kernel](../images/Module03/python-kernel.png)
 
+5. Rename the notebook to VisualizeRetailData.ipynb.
+
+## 2. Create a database and container
+
+1. Start in the default code cell.
+
+2. Import any packages you require for this tutorial.
+
+        import azure.cosmos
+        from azure.cosmos.partition_key import PartitionKey
+
+
+3. Create a database named **RetailIngest** using the built-in SDK.
+
+        database = cosmos_client.create_database_if_not_exists('RetailIngest')
+
+
+4. Create a container named WebsiteMetrics with a partition key of /CartID.
+
+        container = database.create_container_if_not_exists(id='WebsiteMetrics', partition_key=PartitionKey(path='/CartID'))
+
+5. Select **Run** to create the database and container resource.
+
+
+## 3. Create a database and container
+
+1. Add a new code cell.
+
+2. Within the code cell, add the following magic command to upload.
+
+        %%upload --databaseName RetailIngest --containerName WebsiteMetrics --url https://cosmosnotebooksdata.blob.core.windows.net/notebookdata/websiteData.json
+
+3. Select Run Active Cell to only run the command in this specific cell.
+
+4. Observe the output from the run command. Ensure that 2,654 documents were imported.
+
+
 > :bulb: **Did you know?**
 >
-> While the **Microsoft Purview Governance Portal** is provided as the default user experience, customers and partners can interface with the underlying platform using the [Microsoft Purview REST API](https://docs.microsoft.com/rest/api/purview/). The openness of the platform enables the possibility of integrating Microsoft Purview with custom user interfaces as well as the ability to perform read/write operations programmatically.
+> To save your work permanently, save your notebooks to a GitHub repository or download the notebooks to your local machine before the session ends.
 
 <div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
 
 
 ## :mortar_board: Knowledge Check
 
-[https://aka.ms/purviewlab/q03](https://aka.ms/purviewlab/q03)
+What is Jupyter Notebook primarily used for?
 
-1. There are a number of **attributes** that we can use to narrow our search results via the **filter pane**, which of the following is **not** available as a quick filter?
+        a. Web browsing
+        b. Writing and executing code
+        c. Video editing
+        d. Playing games
+        
+        Answer: b. Writing and executing code
 
-    A ) Source Type  
-    B ) Classification  
-    C ) Size  
+Which of the following is a keyboard shortcut to create a new cell in Jupyter Notebook?
 
-2. Using the Microsoft Purview Governance Portal (UI), you can edit an asset and manually update an assets **Description**?
+        a. Ctrl + N
+        b. Ctrl + Shift + N
+        c. Alt + N
+        d. Alt + Shift + N
 
-    A ) True  
-    B ) False  
+        Answer: b. Ctrl + Shift + N
 
-3. Using the Microsoft Purview Governance Portal (UI), you can edit an asset and manually add and remove **Classifications**?
+Which of the following is a keyboard shortcut to run a cell in Jupyter Notebook?
 
-    A ) True  
-    B ) False  
+        a. Ctrl + R
+        b. Ctrl + Shift + R
+        c. Alt + R
+        d. Shift + Enter
 
-4. Using the Microsoft Purview Governance Portal (UI), you can edit an asset and manually update an assets **Technical Properties** (e.g. qualifiedName, partitionCount, totalSizeBytes, etc)?
+        Answer: d. Shift + Enter
 
-    A ) True  
-    B ) False  
+What is the purpose of using the "magic" command in Jupyter Notebook?
 
-5. Assets in the catalog can be assigned contacts, which of the following is an **invalid contact type**?
+        a. To perform complex mathematical operations
+        b. To execute system commands
+        c. To change the appearance of the notebook
+        d. To create new cells
 
-    A ) Expert  
-    B ) Owner  
-    C ) Reader  
+        Answer: b. To execute system commands
 
-<div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
+Which of the following is the correct way to install a new package in Jupyter Notebook using pip?
+
+        a. !pip install package_name
+        b. !pip -i package_name
+        c. !install package_name
+        d. !pip package_name
+
+        Answer: a. !pip install package_name
+
 
 ## :tada: Summary
 
-This module provided an overview of how to search, browse, and update assets.
+This tutorial walks through how to use the Jupyter Notebooks feature of Azure Cosmos DB.
 
 [Continue >](../modules/module04.md)
