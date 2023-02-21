@@ -35,22 +35,34 @@ https://learn.microsoft.com/en-us/azure/cosmos-db/gremlin/tutorial-query
 
 ## :mortar_board: Knowledge Check
 
-[https://aka.ms/purviewlab/q06](https://aka.ms/purviewlab/q06)
+Which of the following is a type of data model supported by Azure Cosmos DB using the Gremlin API?
 
-1. A Microsoft Purview account can connect to multiple Azure Data Factories?
+        A) Relational data model
+        B) Document data model
+        C) Graph data model
+        D) None of the above
 
-    A ) True  
-    B ) False
+What is the purpose of vertices in a graph data model?
 
-2. An Azure Data Factory can connect to multiple Microsoft Purview accounts?
+        A) To represent entities in the data model
+        B) To represent relationships between entities in the data model
+        C) To define the schema of the graph data model
+        D) None of the above
 
-    A ) True  
-    B ) False  
+Which of the following is a query language used with the Gremlin API for graph data models?
 
-3. ETL processes are rendered on the lineage graph with what type of edges?
+        A) SQL
+        B) Cypher
+        C) Gremlin
+        D) None of the above
 
-    A ) Squared edges  
-    B ) Rounded edges  
+Which of the following is a traversal step in Gremlin that is used to filter vertices based on their properties?
+
+        A) out()
+        B) in()
+        C) has()
+        D) None of the above
+
 
 <div align="right"><a href="#module-06---lineage">↥ back to top</a></div>
 
