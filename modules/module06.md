@@ -1,4 +1,4 @@
-# Module 06 - Advanced Programming Features
+# Module 06 - Using the Gremlin API for a Graph Data Model
 
 [< Previous Module](../modules/module05.md) - **[Home](../README.md)** - [Next Module >](../modules/module07.md)
 
