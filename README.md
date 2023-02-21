@@ -25,7 +25,6 @@ And Cosmos DB has multiple APIs that support a variety of schema‑free data mod
 
 ## :books: Optional Learning Modules
 
-6. [Advanced Programming Features](./modules/module10.md)
-7. [Using the Gremlin API for a Graph Data Model](./modules/module11.md)
+6. [Using the Gremlin API for a Graph Data Model](./modules/module06.md)
 
 <div align="right"><a href="#microsoft-purview-workshop">↥ back to top</a></div>
