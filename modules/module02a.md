@@ -141,7 +141,6 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
     FROM CityPopulation cp
     Group by cp.state 
 
-## 6. Using NoteBook
 
 
 ## :mortar_board: Knowledge Check
@@ -170,4 +169,4 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.
 
-[Continue >](../modules/module02b.md)
+[Continue >](../modules/module03.md)
