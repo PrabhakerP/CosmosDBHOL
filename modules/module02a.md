@@ -145,28 +145,42 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 ## :mortar_board: Knowledge Check
 
-1. What type of object can help organize data sources into logical groups?
+1.	Which of the following is required when creating a container in Azure Cosmos DB? 
 
-    A ) Buckets  
-    B ) Collections  
-    C ) Groups  
+        A) Container ID 
+        B) Database ID 
+        C) Partition key 
+        D) All of the above
 
-2. At which point does Microsoft Purview begin to populate the data map with assets?
 
-    A ) After a Microsoft Purview account is created  
-    B ) After a Data Source has been registered  
-    C ) After a Data Source has been scanned
+2.	What is the purpose of a partition key in Azure Cosmos DB? 
 
-3. Which of the following attributes is **not** automatically assigned to an asset as a result of the system-built scanning functionality?
+        A) To define the logical grouping of documents within a container 
+        B) To improve query performance by reducing the number of documents that need to be scanned 
+        C) To increase the maximum size of a container 
+        D) None of the above
 
-    A ) Technical Metadata (e.g. Fully Qualified Name, Path, Schema, etc)  
-    B ) Glossary Terms (e.g. column `Sales Tax` is tagged with the `Sales Tax` glossary term)  
-    C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)  
+
+3.	Which of the following options is used to set the throughput for a container in Azure Cosmos DB? 
+
+        A) RU/s (Request Units per second) 
+        B) MB/s (Megabytes per second) 
+        C) GB/s (Gigabytes per second) 
+        D) All of the above
+
+
+4.	Which of the following is true regarding creating documents in Azure Cosmos DB? 
+
+        A) All documents within a container must have the same schema 
+        B) Documents are limited to a maximum size of 1 MB 
+        C) Each document must have a unique ID within the container 
+        D) None of the above
+
 
 <div align="right"><a href="#module-02a---register--scan-adls-gen2">↥ back to top</a></div>
 
 ## :tada: Summary
 
-This module provided an overview of how to create a collection, register a source, and trigger a scan.
+This module provided an overview of how to create Containers & Documents.
 
 [Continue >](../modules/module03.md)
