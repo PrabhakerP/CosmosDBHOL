@@ -25,15 +25,15 @@ how to query Cosmos DB using this SQL API. The SQL API uses a special version of
 
 | #  | Section  
 | --- | ---  
-| 1 | [Scalar Expression Queries](#1-Scalar Expression Queries)  
-| 2 | [Query Operators and Built-in Functions](#2-Query Operators and Built-in Functions)  
-| 3 | [Querying a Container](#3-Querying a Container)  
-| 4 | [Intra-document Joins](#4-Intra-document Joins)  
+| 1 | [Scalar Expression Queries](#1-Scalar-Expression-Queries)  
+| 2 | [Query Operators and Built-in Functions](#2-Query-Operators-and-Built-in-Functions)  
+| 3 | [Querying a Container](#3-Querying-a-Container)  
+| 4 | [Intra-document Joins](#4-Intra-document-Joins)  
 | 5 | [Projections](#5-Projections)  
 | 6 | [Search by Classification](#6-search-by-classification)  
-| 7 | [Search by Classification](#7-Subset Filtering)  
-| 8 | [Calculated Properties](#8-Calculated Properties)  
-| 9 | [Aggregation Queries](#9-Aggregation Queries)  
+| 7 | [Search by Classification](#7-Subset-Filtering)  
+| 8 | [Calculated Properties](#8-Calculated-Properties)  
+| 9 | [Aggregation Queries](#9-Aggregation-Queries)  
 
 
 <div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
