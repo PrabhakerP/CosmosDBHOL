@@ -42,17 +42,35 @@ Create an Azure Cosmos DB using the Azure portal.
 
 8.  Navigate over to the **Keys** navigation menu option.
 
-1. Wha pricing is **serverless** is offers on-demand database operations?
+## :mortar_board: Knowledge Check
 
-    A ) Provisioned Throughput  
-    B ) Serverless   
-    C ) Neither
+1. Which of the following APIs are supported by Azure Cosmos DB? 
 
-2. What type of Backup storage is enabled by default?
+        A) Core (SQL) API 
+        B) Cassandra API 
+        C) MongoDB API 
+        D) All of the above  
+        
+ 2. Which of the following consistency levels are available for an Azure Cosmos DB account? 
 
-    A ) Continuous backup  
-    B ) Periodic backup  
-    C ) Neither
+        A) Strong 
+        B) Bounded staleness 
+        C) Session 
+        D) All of the above
+  
+3.  What is the purpose of configuring multiple regions for an Azure Cosmos DB account?
+
+         A) To improve availability and fault tolerance 
+         B) To reduce the cost of the account 
+         C) To increase the maximum storage capacity of the account 
+         D) None of the above
+ 
+4. Which pricing tier of an Azure Cosmos DB account provides the highest level of performance and the most advanced features?
+
+        A) Free tier 
+        B) Standard tier 
+        C) Premium tier 
+        D) There is no difference in performance and features between the pricing tiers.
 
 
 [Continue >](../modules/module02a.md)
