@@ -70,4 +70,4 @@ Which of the following is a traversal step in Gremlin that is used to filter ver
 
 This module provided an overview of graph databases in Cosmos DB using the Gremlin API.
 
-[Continue >](../modules/module07.md)
+[Continue >](../modules/README.md)
