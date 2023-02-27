@@ -40,7 +40,10 @@ how to query Cosmos DB using this SQL API. The SQL API uses a special version of
 
 ## 1. Scalar Expression Queries
 
-1. Open the **Microsoft Purview Governance Portal**, navigate to **Data map** > **Classifications** (under Annotation management) and click **New**.
+Scalar expression queries are a handy way to learn the many capabilities of the SQL dialect in Cosmos DB. These queries don't have a FROM clause, and thus, they don't actually query items in the container, although we technically do need to specify an arbitrary container to submit the query.
+
+Open a new notebook and run these queries on a seperate cells and observe the results.
+
 
 
 ## 2. Query Operators and Built-in Functions
