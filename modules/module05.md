@@ -54,6 +54,9 @@ Open a new notebook and run these queries on a seperate cells and observe the re
         # Use VALUE to return a scalar value instead of an object
         SELECT VALUE "Hello"
         
+        
+## 2. Query Operators and Built-in Functions
+
         # Math functions
         SELECT
         ROUND(3.4) AS round34,			ROUND(3.5) AS round35,
@@ -84,10 +87,6 @@ Open a new notebook and run these queries on a seperate cells and observe the re
         SELECT
         GETCURRENTDATETIME() AS currentUtcDateTime,
         GETCURRENTTIMESTAMP () AS currentUtcTimestamp
-        
-## 2. Query Operators and Built-in Functions
-
-1. Navigate to **Data map** > **Classification rules** (under Annotation management) and click **New**.
 
 
 ## 3. Querying a Container
