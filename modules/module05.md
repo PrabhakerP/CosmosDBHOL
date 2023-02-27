@@ -44,8 +44,45 @@ Scalar expression queries are a handy way to learn the many capabilities of the 
 
 Open a new notebook and run these queries on a seperate cells and observe the results.
 
+        SELECT "Hello"
+        
+        # Use AS to override auto-assigned properties
+        SELECT "Hello" AS Greetings
+        
+        # Use VALUE to return a scalar value instead of an object
+        SELECT VALUE "Hello"
+        
+        # Math functions
+        SELECT
+        ROUND(3.4) AS round34,			ROUND(3.5) AS round35,
+        CEILING(3.4) AS ceiling34,		CEILING(3.5) AS ceiling35,
+        FLOOR(3.4) AS floor34,			FLOOR(3.5) AS floor35,
+        ABS(-5) AS absMinus5,			ABS(5) AS abs5,
+        SIN(28) AS sin28,
+        COS(28) AS cos28,
+        TAN(28) AS tan28,
+        LOG(16) AS log16,
+        PI() AS pi
+         
+        # Logical operators
+        SELECT
+        ("hot" = "cold" AND "up" = "down" OR 1 = 1) AS logical1,
+        ("hot" = "cold" AND ("up" = "down" OR 1 = 1) ) AS logical2
 
+        # String functions
+        SELECT
+        CONCAT("A", "b", "c", "d")	AS strConcat,       CONTAINS("Abcdef", "cde")	AS strContains,
+        STARTSWITH("Abcdef", "Ab")	AS strStartsWith,   ENDSWITH("Abcdef", "cdef")	AS strEndsWith,
+        INDEX_OF("Abcdef", "de")	AS strIndexOf1,     INDEX_OF("Abcdef", "df")	AS strIndexOf2,
+        LEFT("Abcdef", 3)			AS strLeft,         RIGHT("Abcdef", 3)			AS strRight,
+        SUBSTRING("Abcdef", 2, 3)	AS strSubstring,    LENGTH("Abcdef")			AS strLength,
+        LOWER("Abcdef")			AS strLower,        UPPER("Abcdef")			    AS strUpper
 
+        # Date & Time
+        SELECT
+        GETCURRENTDATETIME() AS currentUtcDateTime,
+        GETCURRENTTIMESTAMP () AS currentUtcTimestamp
+        
 ## 2. Query Operators and Built-in Functions
 
 1. Navigate to **Data map** > **Classification rules** (under Annotation management) and click **New**.
