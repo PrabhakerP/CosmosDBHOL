@@ -42,7 +42,9 @@ how to query Cosmos DB using this SQL API. The SQL API uses a special version of
 
 Scalar expression queries are a handy way to learn the many capabilities of the SQL dialect in Cosmos DB. These queries don't have a FROM clause, and thus, they don't actually query items in the container, although we technically do need to specify an arbitrary container to submit the query.
 
-Open a new notebook and run these queries on a seperate cells and observe the results.
+Open a new notebook and run these queries on a seperate cells and observe the results. Use the sql magic to run SQL queries.
+
+**%%sql --database Families --container Families**
 
         SELECT "Hello"
         
