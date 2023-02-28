@@ -75,4 +75,4 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 
 This module provided an overview of how to create, export, and import terms into the Microsoft Purview glossary.
 
-[Continue >](../modules/module05.md)
+[Continue >](../modules/module06.md)
