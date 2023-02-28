@@ -286,4 +286,4 @@ Open a new notebook and run these queries on a seperate cells and observe the re
 
 This module provided an overview of how to create a custom classification, and how to have the classification automatically applied as part of a scan using a custom scan rule set.
 
-[Continue >](../modules/module06.md)
+[Continue >](../modules/module05.md)
