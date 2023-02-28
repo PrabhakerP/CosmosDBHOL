@@ -90,10 +90,10 @@ Open a new notebook and run these queries on a seperate cells and observe the re
 
 
 ## 3. Querying a Container
-
-1. Navigate to **Data map** > **Scan rule sets** (under Source management) and click **New**.
-
-
+        We can just use 'c' for container.
+        SELECT * FROM c
+        
+        
 ## 4. Intra-document Joins
 
 1. Download a copy of **[twitter_handles.parquet](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.parquet)** to your local machine.
