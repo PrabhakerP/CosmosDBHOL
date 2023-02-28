@@ -13,27 +13,26 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 
 * An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
 * .NET SDK is version 6.0 or later. Open command window, run dotnet --version to check the version.
+* VS code
 
 
 ## :bookmark_tabs: Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
-| 1 | [Create a Term (System Default Term Template)](#1-create-a-term-system-default-term-template) | Data Curator |
-| 2 | [Create a Term (Custom Term Template)](#2-create-a-term-custom-term-template) | Data Curator |
-| 3 | [Bulk Import Terms](#3-bulk-import-terms) | Data Curator |
-| 4 | [Bulk Export Terms](#4-bulk-export-terms) | Data Reader |
-| 5 | [Assign a Term to an Asset](#5-assign-a-term-to-an-asset) | Data Curator |
-| 6 | [Update an Existing Term](#6-update-an-existing-term) | Data Curator |
+| 1 | [Create a console application to read docs)](#1-Create-a-console-application-to-read-docs) 
+| 2 | [Create a console application to create database, contrainer and docs)](#2-Create-a-console-application-to-create-database-contrainer-and-docs)
 
 <div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
 
-## 1. Create a Term (System Default Term Template)
+## 1. Create a console application to read docs
 
-1. Open the **Microsoft Purview Governance Portal** and from the **Data catalog**, click **Glossary**.
+1. Open the terminal from VS code and run these commands.
+    dotnet new console
+    dotnet add package Microsoft.Azure.Cosmos
+    dotnet restore
 
-    ![ALT](../images/module04/04.00-manage-glossary.png)
-
+## 2. Create a console application to create database, contrainer and docs
 
 
 ## :mortar_board: Knowledge Check
