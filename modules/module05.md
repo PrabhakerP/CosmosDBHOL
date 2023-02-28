@@ -33,9 +33,51 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
         dotnet add package Microsoft.Azure.Cosmos
         dotnet restore
 
+2. Replace this code in Program.cs file:
+
+                using Microsoft.Azure.Cosmos;
+                using System;
+                using System.Threading.Tasks;
+
+                namespace DotNetSdkDemo
+                {
+                        class Program
+                        {
+                                async static Task Main(string[] args)
+                                {
+                                        await QueryForDocument();
+                                }
+
+                                private async static Task QueryForDocument()
+                                {
+                            var cosmosUrl = "####";
+                            var cosmoskey = "####";
+
+                                        using (var client = new CosmosClient(cosmosUrl, cosmoskey))
+                                        {
+                                                var container = client.GetContainer("Families", "Families");
+                                                var sql = "SELECT * FROM c WHERE ARRAY_LENGTH(c.children) > 1";
+                                                var iterator = container.GetItemQueryIterator<dynamic>(sql);
+                                                var page = await iterator.ReadNextAsync();
+
+                                                foreach (var doc in page)
+                                                {
+                                                        Console.WriteLine($"Family {doc.id} has {doc.children.Count} children");
+                                                }
+                                                Console.ReadLine();
+                                        }
+                                }
+
+                        }
+                }
+
+3. Find values for cosmosUrl and cosmosKey from Cosmos DB account and replace them with ####
+
+4. Press Ctrl+F5 to run the code.
+
 ## 2. Create a console application to create database, contrainer and docs
 
-
+1. Replace 
 ## :mortar_board: Knowledge Check
 
 [https://aka.ms/purviewlab/q04](https://aka.ms/purviewlab/q04)
