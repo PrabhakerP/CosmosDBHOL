@@ -1,4 +1,4 @@
-# Module 05 - Writing Queries
+# Module 04 - Writing Queries
 
 [< Previous Module](../modules/module04.md) - **[Home](../README.md)** - [Next Module >](../modules/module06.md)
 
