@@ -78,9 +78,9 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 ## 2. Create a console application to create database, contrainer and docs
 
 1. Replace 
-## :mortar_board: Knowledge Check
 
-[https://aka.ms/purviewlab/q04](https://aka.ms/purviewlab/q04)
+
+## :mortar_board: Knowledge Check
 
 1.	Which of the following programming languages can be used to develop client applications for Cosmos DB with the SQL API?
 
