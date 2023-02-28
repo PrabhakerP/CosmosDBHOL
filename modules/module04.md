@@ -40,16 +40,16 @@ how to query Cosmos DB using this SQL API. The SQL API uses a special version of
 
 ## 0. Upload and run a notebook
 1. Click on the **Gallery** under **NOTEBOOKS** and select **Upload to a New Server** under **New Notebook**.
-
-    ![Upload Notebook](../images/module04/UploadNoteBook.png)  
+ 
+    ![Upload Notebook](../images/Module04/UploadNoteBook.png)  
 
 2. Navigate to the notebook location and select the **Families.ipynb**.
 
-    ![Select notebook](../images/module04/NoteBook.png)
+    ![Select NoteBook](../images/Module04/NoteBook.png)
 
 3. **Run All**.  
     
-    ![Run All](../images/module04/RunNoteBook.png)
+    ![Run All](../images/Module04/RunNoteBook.png)
     
 ## 1. Scalar Expression Queries
 
@@ -103,27 +103,158 @@ Open a new notebook and run these queries on a seperate cells and observe the re
 
 
 ## 3. Querying a Container
-1. Right click on **Families** database and delete. We are going to create a new database, container and documents with notebooks.
+1. Open a New Query on the container and Highlight each query and observe the results.
         
-        
+         SELECT
+            c.location.city,
+            c.location.state
+        FROM
+            c
+
+        SELECT
+            Families.location.city,
+            Families.location.state
+        FROM
+            Families
+
+        SELECT
+            f.location.city,
+            f.location.state
+        FROM
+            Families AS f
+
+        SELECT *
+        FROM c.children
+
+        SELECT c.children
+        FROM c
+        WHERE c.location.state = 'NY'
+
+        SELECT *
+        FROM ch IN c.children
+
+        SELECT
+            ch.firstName,
+            ch.givenName,
+            ch.grade,
+            ARRAY_LENGTH(ch.pets) AS numberOfPets,
+            ch.pets
+        FROM
+            ch IN c.children
+
+        SELECT
+            ch.givenName ?? ch.firstName AS childName,
+            ch.grade,
+            ARRAY_LENGTH(ch.pets) ?? 0 AS numberOfPets,
+            ch.pets ?? [] AS pets
+        FROM
+            ch IN c.children
         
 ## 4. Intra-document Joins
 
-1. Download a copy of **[twitter_handles.parquet](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.parquet)** to your local machine.
+        SELECT
+            f.id,
+            f.location.city,
+            f.location.state,
+            ch.givenName ?? ch.firstName AS childName,
+            ARRAY_LENGTH(ch.pets) ?? 0 AS numberOfPets,
+            ch.pets ?? [] AS pets
+        FROM
+            c AS f
+            JOIN ch IN f.children
+
+        SELECT
+            f.id,
+            ch.givenName ?? ch.firstName AS childName,
+            p.givenName AS petName,
+            p.type
+        FROM
+            c AS f
+            JOIN ch IN f.children
+            JOIN p IN ch.pets
+
+        SELECT p.givenName 
+        FROM c AS f
+        JOIN ch IN f.children 
+        JOIN p IN ch.pets
+
+        SELECT p.givenName 
+        FROM c AS f
+        JOIN ch IN f.children 
+        JOIN p IN ch.pets
+
+        SELECT VALUE p.givenName 
+        FROM c AS f
+        JOIN ch IN f.children 
+        JOIN p IN ch.pets
 
 
 ## 5. Projections
 
-1. Open the **Microsoft Purview Governance Portal**, navigate to **Data map** > **Sources** and click **New Scan** within the Azure Data Lake Storage Gen2 tile. Note: 
+        SELECT c.id, c.name
+        FROM c
+        
+        SELECT VALUE c.name
+        FROM c
+
+        SELECT VALUE c.name || ', ' || c.address.countryRegionName
+        FROM c
+
+        SELECT
+          c.address.countryRegionName AS country,
+          {
+            "storeName": c.name,
+            "cityStateZip": [
+                c.address.location.city,
+                c.address.location.stateProvinceName
+            ],
+            "metadata": {
+                "internalId": c.id,
+                "timestamp": c._ts
+            }
+          } AS storeInfo
+        FROM c
 
 ## 6. Range Queries and Sorting
 
+        SELECT c.id, c.address.countryRegionName
+        FROM c
+        WHERE c.id >= 'A' AND c.id <= 'U'
+        
+        SELECT c.id, c.address.countryRegionName
+        FROM c
+        WHERE c.id >= 'A' AND c.id <= 'U'
+        
+        SELECT c.id, c.address.countryRegionName
+        FROM c
+        ORDER BY c.id
+        
+        SELECT TOP 2 c.id, c.address.countryRegionName
+        FROM c
+        ORDER BY c.id
+        
 ## 7. Subset Filtering
+
+        SELECT l.city
+        FROM c.location as l
+        WHERE l.city = 'Seattle'
 
 ## 8. Calculated Properties
 
 ## 9. Aggregation Queries
-
+        SELECT
+        COUNT(ch) AS NyKidsCount,
+        MIN(ch.grade) AS NyMinGrade,
+        MAX(ch.grade) AS NyMaxGrade,
+        AVG(ch.grade) AS NyAvgGrade,
+        SUM(ARRAY_LENGTH(ch.pets)) AS NyPetsCount
+        FROM c JOIN ch IN c.children
+        WHERE c.location.state = 'NY' 
+        
+        SELECT COUNT(c) AS Zip14111Count
+        FROM c
+        WHERE
+        c.address.postalCode = '14111'
 
 1. Once the scan has complete, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
 
