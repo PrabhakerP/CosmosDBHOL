@@ -116,17 +116,19 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 ## 5. Uploading a JSON file with multiple items
 
-1. click New Container from the top left corner, provide the following details. Select OK.
+1. 1. Download the files from  [Downloads](../assests/Module02/)
+
+2. click New Container from the top left corner, provide the following details. Select OK.
 
     ![New Container](../images/module02/Cities.png)
 
-2. Expand **Cities** and Click on **CityPopulation**
+3. Expand **Cities** and Click on **CityPopulation**
 
-3. Select **Upload Item** from the menu and browse to the extrated file and select citie.json.
+4. Select **Upload Item** from the menu and browse to the extrated file and select citie.json.
 
-4. Click **Upload**
+5. Click **Upload**
 
-5. Run these queries:
+6. Run these queries:
 
     SELECT cp.city, cp.state, cp.rank FROM CityPopulation cp
 
