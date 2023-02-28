@@ -116,7 +116,7 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 ## 5. Uploading a JSON file with multiple items
 
-1. 1. Download the files from  [Downloads](../assests/Module02/)
+1. 1. Download the cities.json file from  [Downloads](../assests/Module02/)
 
 2. click New Container from the top left corner, provide the following details. Select OK.
 
