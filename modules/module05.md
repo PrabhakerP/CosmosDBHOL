@@ -21,7 +21,7 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 | #  | Section  
 | --- | ---  
 | 1 | [Create a console application to read docs](#1-Create-a-console-application-to-read-docs)  
-| 2 | [Query Operators and Built-in Functions](#2-Query-Operators-and-Built-in-Functions)  
+| 2 | [Create a console application to create database, contrainer and docs](#2-Create-a-console-application-to-create-database-contrainer-and-docs)  
 
 <div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
 
