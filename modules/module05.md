@@ -115,7 +115,7 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 
                             // Create an item
                             dynamic testItem = new { id = Guid.NewGuid().ToString(), partitionKeyPath = "MyTestPkValue", details = "it's working" };
-                            //ItemResponse<dynamic> createResponse  = await container.CreateItemAsync(testItem);
+                            ItemResponse<dynamic> createResponse  = await container.CreateItemAsync(testItem);
 
                             // Query for an item
                             using (FeedIterator<dynamic> feedIterator = container.GetItemQueryIterator<dynamic>(
