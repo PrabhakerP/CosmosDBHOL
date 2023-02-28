@@ -39,15 +39,17 @@ how to query Cosmos DB using this SQL API. The SQL API uses a special version of
 <div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
 
 ## 0. Upload and run a notebook
-1. Click on the **Gallery** under **NOTEBOOKS** and select **Upload to a New Server** under **New Notebook**.
+1. Download the files from  [Downloads](../assests/Module04/)
+
+2. Click on the **Gallery** under **NOTEBOOKS** and select **Upload to a New Server** under **New Notebook**.
  
     ![Upload Notebook](../images/Module04/UploadNoteBook.png)  
 
-2. Navigate to the notebook location and select the **Families.ipynb**.
+3. Navigate to the notebook location and select the **Families.ipynb**.
 
     ![Select NoteBook](../images/Module04/NoteBook.png)
 
-3. **Run All**.  
+4. **Run All**.  
     
     ![Run All](../images/Module04/RunNoteBook.png)
     
