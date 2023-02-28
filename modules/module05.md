@@ -90,8 +90,8 @@ Open a new notebook and run these queries on a seperate cells and observe the re
 
 
 ## 3. Querying a Container
-        We can just use 'c' for container.
-        SELECT * FROM c
+1. Right click on **Families** database and delete. We are going to create a new database, container and documents with notebooks.
+        
         
         
 ## 4. Intra-document Joins
