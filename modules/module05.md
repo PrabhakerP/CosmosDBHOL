@@ -1,4 +1,4 @@
-# Module 05 - Programming with .NET SDK
+# Module 05 - Writing applications for Cosmos DB
 
 [< Previous Module](../modules/module04.md) - **[Home](../README.md)** - [Next Module >](../modules/module05.md)
 
