@@ -38,6 +38,19 @@ how to query Cosmos DB using this SQL API. The SQL API uses a special version of
 
 <div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
 
+## 0. Upload and run a notebook
+1. Click on the **Gallery** under **NOTEBOOKS** and select **Upload to a New Server** under **New Notebook**.
+
+    ![Upload Notebook](../images/module04/UploadNoteBook.png)  
+
+2. Navigate to the notebook location and select the **Families.ipynb**.
+
+    ![Select notebook](../images/module04/NoteBook.png)
+
+3. **Run All**.  
+    
+    ![Run All](../images/module04/RunNoteBook.png)
+    
 ## 1. Scalar Expression Queries
 
 Scalar expression queries are a handy way to learn the many capabilities of the SQL dialect in Cosmos DB. These queries don't have a FROM clause, and thus, they don't actually query items in the container, although we technically do need to specify an arbitrary container to submit the query.
