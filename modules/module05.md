@@ -28,9 +28,10 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 ## 1. Create a console application to read docs
 
 1. Open the terminal from VS code and run these commands.
-    dotnet new console
-    dotnet add package Microsoft.Azure.Cosmos
-    dotnet restore
+
+        dotnet new console
+        dotnet add package Microsoft.Azure.Cosmos
+        dotnet restore
 
 ## 2. Create a console application to create database, contrainer and docs
 
