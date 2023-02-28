@@ -77,7 +77,66 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 
 ## 2. Create a console application to create database, contrainer and docs
 
-1. Replace 
+1. Open a New Folder in VS.
+
+2. Open the terminal from VS code and run these commands. 
+        dotnet new console
+        dotnet add package Microsoft.Azure.Cosmos
+        dotnet restore
+
+3. Replace this code in Program.cs file:
+
+         using Microsoft.Azure.Cosmos;
+         using System;
+         using System.Threading.Tasks;
+
+         namespace DotNetSdkDemo
+         {
+                 class Program
+                 {
+                         async static Task Main(string[] args)
+                         {
+                                 await CreateCosmosDBDoc();
+                         }
+
+                         private async static Task CreateCosmosDBDoc()
+                         {
+                          
+                            var cosmosUrl = "https://cosmosholacct.documents.azure.com:443/";
+                            var cosmoskey = "qhVLxASTrfzUMKrigkxXLxM08BeH3ltJG4SBh9KxJk92q4TXh108jGNoKm5fsZlwQ1vQHjYco6WwACDbVKVBYg==";
+                            
+                            CosmosClient client = new CosmosClient(cosmosUrl, cosmoskey);
+                            
+                            Database database = await client.CreateDatabaseIfNotExistsAsync("MyCosmosDB");
+                            Container container = await database.CreateContainerIfNotExistsAsync(
+                                "MyContainerName",
+                                "/partitionKeyPath",
+                                400);
+
+                            // Create an item
+                            dynamic testItem = new { id = Guid.NewGuid().ToString(), partitionKeyPath = "MyTestPkValue", details = "it's working" };
+                            //ItemResponse<dynamic> createResponse  = await container.CreateItemAsync(testItem);
+
+                            // Query for an item
+                            using (FeedIterator<dynamic> feedIterator = container.GetItemQueryIterator<dynamic>(
+                                "select * from T where T.status = 'done'"))
+                            {
+                                while (feedIterator.HasMoreResults)
+                                {
+                                    FeedResponse<dynamic> response = await feedIterator.ReadNextAsync();
+                                    foreach (var item in response)
+                                    {
+                                        Console.WriteLine(item);
+                                    }
+                                }
+                            }
+                                }
+
+                 }
+         }
+
+4. Check the CosmosDB and verify the database MyCosmosDB, MyContainerName and Docs created.
+
 
 
 ## :mortar_board: Knowledge Check
