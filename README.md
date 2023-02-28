@@ -21,7 +21,7 @@ And Cosmos DB has multiple APIs that support a variety of schema‑free data mod
 2. [Creating Containers & Documents](./modules/module02a.md)
 3. [Using Notebook](./modules/module03.md)
 4. [Writing Queries](./modules/module04.md)
-5. [Programming with .NET](./modules/module05.md)
+5. [Writing applications for Cosmos DB](./modules/module05.md)
 
 ## :books: Optional Learning Modules
 
