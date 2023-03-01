@@ -130,18 +130,18 @@ An Azure Cosmos DB container is where data is stored. Unlike most relational dat
 
 6. Run these queries:
 
-    SELECT cp.city, cp.state, cp.rank FROM CityPopulation cp
+        SELECT cp.city, cp.state, cp.rank FROM CityPopulation cp
 
-    SELECT cp.city, cp.state, cp.rank FROM CityPopulation cp
-    WHERE StringToNumber(cp.rank) between 30 AND 50
+        SELECT cp.city, cp.state, cp.rank FROM CityPopulation cp
+        WHERE StringToNumber(cp.rank) between 30 AND 50
 
-    SELECT cp.city, cp.state, cp.rank FROM CityPopulation cp
-    WHERE StringToNumber(cp.rank) between 30 AND 50
-    Order by cp.growth_from_2000_to_2013 DESC
+        SELECT cp.city, cp.state, cp.rank FROM CityPopulation cp
+        WHERE StringToNumber(cp.rank) between 30 AND 50
+        Order by cp.growth_from_2000_to_2013 DESC
 
-    SELECT AVG(StringToNumber(cp.population)) AveragePopulation, COUNT(cp.city) Cities, cp.state 
-    FROM CityPopulation cp
-    Group by cp.state 
+        SELECT AVG(StringToNumber(cp.population)) AveragePopulation, COUNT(cp.city) Cities, cp.state 
+        FROM CityPopulation cp
+        Group by cp.state 
 
 
 
