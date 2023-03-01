@@ -61,7 +61,7 @@ Azure Cosmos DB built-in Jupyter Notebooks are directly integrated into the Azur
 5. Select **Run** to create the database and container resource.
 
 
-## 3. Create a database and container
+## 3. Upload sample data
 
 1. Add a new code cell.
 
@@ -73,7 +73,7 @@ Azure Cosmos DB built-in Jupyter Notebooks are directly integrated into the Azur
 
 4. Observe the output from the run command. Ensure that 2,654 documents were imported.
 
-## 4. Create a database and container
+## 4. Run queries
 
 1. Create another new code cell.
 
