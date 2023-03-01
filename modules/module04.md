@@ -6,12 +6,6 @@
 
 How to query Cosmos DB using this SQL API. The SQL API uses a special version of Structured Query Language that lets you query JSON documents in a container. This version of SQL has some unique syntax designed specifically for the non‑relational world of Cosmos DB. The language still reads as familiar SQL, but is all based on hierarchical JSON documents, not relational tables, and you work with JSON data types, not SQL data types. So you'll see familiar keywords like SELECT, FROM, WHERE, etc. We have to use dotted notation in your queries to navigate a path to any property, no matter how deeply nested it may be within the document. While Cosmos DB doesn't support joins across documents, you can perform what's called an intra‑document join, so you can turn a single document that's got an array of four objects into four separate documents, kind of how an inner join in the relational world turns a single row on the left into as many rows as you join on the right, and your queries can return documents from the database as is, or you can project any custom JSON shape that you want based on as much or as little of the document data that you want. Here's a quick example. At first blush, this looks like a plain, ordinary SQL statement, but when you have a closer look, you can see that it's not. It uses dotted notation to query the state property nested beneath the address property. 
 
-
-## :dart: Objectives
-
-* Create a custom classification.
-* Trigger a scan that will apply the custom classification to an asset.
-
 ## :bookmark_tabs: Table of Contents
 
 | #  | Section  
