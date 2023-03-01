@@ -37,6 +37,8 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 
         A "Required assets to build and debug are missing. Add them?" notification appears at the bottom right of the window.
         Select Yes.
+        
+        If you miss it use Command Palette (View > Command Palette Ctrl+Shift+P) by typing '.NET', and running .NET: Generate Assets for Build and Debug.
                 
 4. Run the app by entering the following command in the command shell make sure the environment is good. It should display "Hello, World!"         
 
