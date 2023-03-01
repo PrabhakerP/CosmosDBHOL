@@ -262,7 +262,6 @@ Open a new notebook and run these queries on a seperate cells and observe the re
 
 ## :mortar_board: Knowledge Check
 
-[https://aka.ms/purviewlab/q05](https://aka.ms/purviewlab/q05)
 
 1. Which of the following is a valid classification rule type?
 
