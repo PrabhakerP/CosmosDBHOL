@@ -102,8 +102,8 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
                          private async static Task CreateCosmosDBDoc()
                          {
                           
-                            var cosmosUrl = "https://cosmosholacct.documents.azure.com:443/";
-                            var cosmoskey = "qhVLxASTrfzUMKrigkxXLxM08BeH3ltJG4SBh9KxJk92q4TXh108jGNoKm5fsZlwQ1vQHjYco6WwACDbVKVBYg==";
+                            var cosmosUrl = "####";
+                            var cosmoskey = "####";
                             
                             CosmosClient client = new CosmosClient(cosmosUrl, cosmoskey);
                             
