@@ -114,19 +114,21 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
                                 400);
 
                             // Create an item
-                            dynamic testItem = new { id = Guid.NewGuid().ToString(), partitionKeyPath = "MyTestPkValue", details = "it's working" };
-                            ItemResponse<dynamic> createResponse  = await container.CreateItemAsync(testItem);
+                            dynamic testItem = new { id = Guid.NewGuid().ToString(), partitionKeyPath = "MyTestPkValue", details = "it's working", status = "done" };
+                            await container.CreateItemAsync(testItem);
 
                             // Query for an item
-                            using (FeedIterator<dynamic> feedIterator = container.GetItemQueryIterator<dynamic>(
+                            using (var iterator1 = container.GetItemQueryIterator<dynamic>(
                                 "select * from T where T.status = 'done'"))
                             {
-                                while (feedIterator.HasMoreResults)
+                                while (iterator1.HasMoreResults)
                                 {
-                                    FeedResponse<dynamic> response = await feedIterator.ReadNextAsync();
-                                    foreach (var item in response)
+                                    var documents1 = await iterator1.ReadNextAsync();
+                                    var cnt = 0;
+                                    foreach (var item in documents1)
                                     {
-                                        Console.WriteLine(item);
+                                        //Console.WriteLine(item);
+                                        Console.WriteLine($" ({++cnt}) Id: {item.id}; Details: {item.details}; Status: {item.status}");
                                     }
                                 }
                             }
@@ -134,7 +136,8 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 
                  }
          }
-
+         
+         
 4. Check the CosmosDB and verify the database MyCosmosDB, MyContainerName and Docs created.
 
 
