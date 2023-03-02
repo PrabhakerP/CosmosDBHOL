@@ -87,9 +87,73 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
                         }
                 }
 
-3. Find values for cosmosUrl and cosmosKey from Cosmos DB account and replace them with ####
+7. Find values for cosmosUrl and cosmosKey from Cosmos DB account and replace them with ####
 
-4. Press Ctrl+F5 to run the code.
+8. Press Ctrl+F5 to run the code.
+
+9. Replace the code with the below to list all the documents.
+
+            using System;
+            using System.Collections.Generic;
+            using Microsoft.Azure.Cosmos;
+
+            namespace CosmosDBSample
+            {
+                class Program
+                {
+                    static async Task Main(string[] args)
+                    {
+                        // Get your Cosmos DB account endpoint and key from the Azure portal
+                        string endpointUrl = "######";
+                        string primaryKey = "####";
+
+                        // Create a new Cosmos DB client instance
+                        CosmosClient cosmosClient = new CosmosClient(endpointUrl, primaryKey);
+
+                        // Set the database and container names
+                        string databaseName = "Families";
+                        string containerName = "Families";
+
+                        // Create a new instance of the container
+                        Container container = cosmosClient.GetContainer(databaseName, containerName);
+
+                        // Define a query to retrieve all documents from the container
+                        string sqlQuery = "SELECT * FROM c";
+
+                        // Set the query options
+                        //QueryRequestOptions queryOptions = new QueryRequestOptions
+                        //{
+                        //    PartitionKey = new PartitionKey("yourPartitionKey")
+                        //};
+
+                        // Execute the query
+                        FeedIterator<dynamic> feedIterator = container.GetItemQueryIterator<dynamic>(sqlQuery); 
+                        //, requestOptions: queryOptions);
+
+                        // Read the results
+                        List<dynamic> items = new List<dynamic>();
+
+                        while (feedIterator.HasMoreResults)
+                        {
+                            FeedResponse<dynamic> response = await feedIterator.ReadNextAsync();
+                            items.AddRange(response);
+                        }
+
+                        // Output the results
+                        foreach (dynamic item in items)
+                        {
+                            Console.WriteLine(item.ToString());
+                        }
+
+                        // Cleanup resources
+                        cosmosClient.Dispose();
+                    }
+                }
+            }
+
+10. Find values for endpointUrl and primaryKey from Cosmos DB account and replace them with ####
+
+11. Press Ctrl+F5 to run the code.
 
 ## 2. Create a console application to create database, contrainer and docs
 
