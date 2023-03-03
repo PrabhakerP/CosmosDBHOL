@@ -160,6 +160,7 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
 1. Open a New Folder in VS.
 
 2. Open the terminal from VS code and run these commands. 
+3. 
         dotnet new console
         dotnet add package Microsoft.Azure.Cosmos
         dotnet restore
