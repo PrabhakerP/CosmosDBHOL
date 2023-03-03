@@ -87,7 +87,7 @@ We'll learn how to use the .NET SDK to build client applications for Cosmos DB a
                         }
                 }
 
-7. Find values for cosmosUrl and cosmosKey from Cosmos DB account and replace them with ####
+7. Find values for cosmosUrl and cosmosKey from Cosmos DB account and replace #### with the actual values.
 
 8. Press Ctrl+F5 to run the code.
 
