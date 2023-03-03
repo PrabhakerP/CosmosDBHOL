@@ -44,7 +44,7 @@ Scalar expression queries are a handy way to learn the many capabilities of the 
 
 Open a new notebook and run these queries on a seperate cells and observe the results. Use the sql magic to run SQL queries.
 
-**%%sql --database Families --container Families**
+       **%%sql --database Families --container Families**
 
         SELECT "Hello"
         
